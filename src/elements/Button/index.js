@@ -9,6 +9,7 @@ export default function Button(props) {
   if (props.isSmall) className.push("btn-sm");
   if (props.isBlock) className.push("btn-block");
   if (props.hasShadow) className.push("btn-shadow");
+  if(props.isOutline) className.push(`btn-outline-primary`)
 
   const onClick = () => {
     if (props.onClick) props.onClick();
@@ -75,6 +76,8 @@ Button.propTypes = {
   target: propTypes.string,
   className: propTypes.string,
   isDisabled: propTypes.bool,
+  isPrimary: propTypes.bool,
+  isOutline: propTypes.bool,
   isLoading: propTypes.bool,
   isSMall: propTypes.bool,
   isLarge: propTypes.bool,
