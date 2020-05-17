@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -44,37 +46,42 @@
 @import "utilities";
 @import "print";
 
-.brand-text-icon{
+.brand-text-icon {
     font-size: 26px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     color: $primary;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
         color: $primary;
     }
 }
-header{
+
+header {
     width: 100%;
     position: relative;
     margin-bottom: 30px;
-    .navbar{
+
+    .navbar {
         height: 80px;
 
-        .navbar-nav{
-            li.nav-item{
-                &.active{
-                    a.nav-link{
+        .navbar-nav {
+            li.nav-item {
+                &.active {
+                    a.nav-link {
                         color: $primary;
                     }
                 }
-                a{
-                    &.nav-link{
+
+                a {
+                    &.nav-link {
                         letter-spacing: 1px;
                         color: $gray-900;
                         padding-left: 1rem;
                         padding-right: 1rem;
-                        &:hover{
+
+                        &:hover {
                             text-decoration: none;
 
                         }
@@ -84,13 +91,15 @@ header{
         }
     }
 }
-section{
+
+section {
     margin-bottom: 70px;
 }
-.card{
+
+.card {
     height: 100%;
-    
-    .tag{
+
+    .tag {
         z-index: 3;
         font-size: 0.875rem;
         background-color: $pink;
@@ -101,34 +110,40 @@ section{
         color: $white;
         min-height: 30px;
         border-radius: 0px 15px;
-        
-        span{
+
+        span {
             font-weight: 300;
         }
     }
-    .img-wrapper{
+
+    .img-wrapper {
         height: 100%;
         margin-bottom: 0;
         border-radius: 0.9375rem;
         overflow: hidden;
     }
-    .meta-wrapper{
+
+    .meta-wrapper {
         margin-top: 1rem;
-        h5{
+
+        h5 {
             font-size: 1.125rem;
             margin-bottom: 2px;
         }
-        span{
+
+        span {
             font-size: .875rem;
 
         }
     }
-    &.card-featured{
+
+    &.card-featured {
         overflow: hidden;
         cursor: pointer;
         height: 100%;
         border-radius: 15px;
-        &::after{
+
+        &::after {
             position: absolute;
             content: " ";
             top: 0;
@@ -138,9 +153,10 @@ section{
             transform: scale(1.1);
             transition: .5s transform ease-in-out;
             z-index: 2;
-            @include gradient-y(rgba($black,0), rgba($black, .51),0%, 100%)           
+            @include gradient-y(rgba($black, 0), rgba($black, .51), 0%, 100%)
         }
-        .img-wrapper{
+
+        .img-wrapper {
             z-index: 1;
             margin: 0;
             position: absolute;
@@ -151,7 +167,8 @@ section{
             transform: scale(1.1);
             transition: .25s ease-in-out;
         }
-        .meta-wrapper{
+
+        .meta-wrapper {
             z-index: 4;
             color: $white;
             padding: 20px;
@@ -165,27 +182,75 @@ section{
             justify-content: flex-end;
             flex-direction: column;
         }
-        &:hover{
-            .meta-wrapper{
+
+        &:hover {
+            .meta-wrapper {
                 transform: translateY(-10px);
             }
-            &:after{
+
+            &:after {
                 transform: scale(1);
             }
-            .img-wrapper{
+
+            .img-wrapper {
                 transform: scale(1);
             }
         }
     }
 }
 
-.img-cover{
+.img-cover {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-.img-contain{
+
+.img-contain {
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+.testimonial-hero,
+.testimonial-hero img {
+    width: 365px;
+    height: 500px;
+
+}
+
+.button-story {
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 50px;
+
+    .brand-tagline {
+        color: #b0b0b0;
+        margin-top: 6px;
+    }
+
+    .list-group-item {
+        padding: 0.3125rem 0;
+        border: 0;
+
+        a,
+        span {
+            color: $gray-500;
+            font-weight: 300;
+        }
+
+        a {
+            @include hover-focus {
+                color: $gray-900;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyrights {
+        margin-top: 50px;
+        font-weight: 300;
+        color: $gray-500;
+    }
 }
