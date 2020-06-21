@@ -4,11 +4,11 @@ import propTypes from "prop-types";
 import { DateRange } from "react-date-range";
 
 import "./index.scss";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
 import formatDate from "utils/formatDate";
-import iconCalendar from "assets/images/icons/ic_calendar.svg";
+import iconCalender from "assets/images/icons/ic_calendar.svg";
 
 export default function Date(props) {
 	const { value, placeholder, name } = props;
@@ -55,7 +55,7 @@ export default function Date(props) {
 			<div className="input-group">
 				<div className="input-group-prepend bg-gray-900">
 					<span className="input-group-text">
-						<img src={iconCalendar} alt="icon calendar" />
+						<img src={iconCalender} alt="icon calendar" />
 					</span>
 				</div>
 				<input

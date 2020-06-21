@@ -4,6 +4,10 @@ import PageDeatailsTitle from "parts/PageDetailsTitle";
 import ItemDetails from "data/itemDetails.json";
 import FeaturedImage from "parts/FeaturedImage";
 import PageDetailsDesc from "parts/PageDetailsDesc";
+import BookingForm from "parts/BookingForm";
+import Category from "parts/Category";
+import Testimonial from "parts/Testimonial";
+import Footer from "parts/Footer";
 
 export default class DetailsPage extends Component {
 	componentDidMount() {
@@ -25,9 +29,14 @@ export default class DetailsPage extends Component {
 						<div className="col-7 pr-5">
 							<PageDetailsDesc data={ItemDetails} />
 						</div>
-						<div className="col-5">Booking Form</div>
+						<div className="col-5">
+							<BookingForm itemDetails={ItemDetails} />
+						</div>
 					</div>
 				</div>
+				<Category data={ItemDetails.categories} />
+				<Testimonial data={ItemDetails.testimonial} />
+				<Footer></Footer>
 			</>
 		);
 	}
