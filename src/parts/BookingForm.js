@@ -85,12 +85,12 @@ export default class BookingForm extends Component {
 					value={data.duration}
 				/>
 
-				<label htmlFor="date">Kapan kamu akan ambil barang?</label>
+				{/* <label htmlFor="date">Kapan kamu akan ambil barang?</label>
 				<InputDate
 					onChange={this.updateData}
 					name="date"
 					value={data.date}
-				></InputDate>
+				></InputDate> */}
 
 				<span
 					className="text-gray-500 font-weight-light"

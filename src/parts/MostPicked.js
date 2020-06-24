@@ -37,9 +37,7 @@ export default function MostPicked(props) {
 											>
 												<h5>{item.name}</h5>
 											</Button>
-											<span>
-												{item.city}, {item.country}
-											</span>
+											<span>{item.country}</span>
 										</div>
 									</div>
 								</Fade>

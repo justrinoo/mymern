@@ -21,17 +21,17 @@ export default function Footer() {
 						<ul className="list-group list-group-flush">
 							<li className="list-group-item">
 								<Button type="link" href="/register">
-									New Account
+									Sign up
 								</Button>
 							</li>
 							<li className="list-group-item">
 								<Button type="link" href="/properties">
-									Start a booking room
+									Mulai Berbelanja
 								</Button>
 							</li>
 							<li className="list-group-item">
 								<Button type="link" href="/use-payments">
-									Use Payments
+									Pakai Gesjan
 								</Button>
 							</li>
 						</ul>
@@ -40,13 +40,8 @@ export default function Footer() {
 						<h6 className="mt-2">Explore Us</h6>
 						<ul className="list-group list-group-flush">
 							<li className="list-group-item">
-								<Button type="link" href="/careers">
-									Our Careers
-								</Button>
-							</li>
-							<li className="list-group-item">
 								<Button type="link" href="/privacy">
-									Privacy
+									Keamanan & Security
 								</Button>
 							</li>
 							<li className="list-group-item">

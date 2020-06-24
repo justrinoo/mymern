@@ -111,7 +111,7 @@ export default class Checkout extends Component {
 													hasShadow
 													onClick={nextStep}
 												>
-													Continue to Book
+													Lanjutkan PembayaranFnama
 												</Button>
 											</Fade>
 										)}
@@ -141,7 +141,7 @@ export default class Checkout extends Component {
 													hasShadow
 													onClick={nextStep}
 												>
-													Continue to Book
+													Lanjut
 												</Button>
 											</Fade>
 										)}

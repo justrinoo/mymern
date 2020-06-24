@@ -46,7 +46,7 @@ export default function Category({ data }) {
 														<h5 className="h4">{itemCategory.name}</h5>
 													</Button>
 													<span className="text-gray-500">
-														{itemCategory.city}, {itemCategory.country}
+														{itemCategory.country}
 													</span>
 												</div>
 											</div>

@@ -47,215 +47,232 @@
 @import "print";
 
 .brand-text-icon {
-	font-size: 26px;
-	font-weight: 500;
-	font-family: "Poppins", sans-serif;
-	color: $red;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: $red;
 
-	&:hover {
-		text-decoration: none;
-		color: $red;
-	}
+    &:hover {
+        text-decoration: none;
+        color: $red;
+    }
 }
 
 header {
-	width: 100%;
-	position: relative;
-	margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
 
-	.navbar {
-		height: 80px;
+    .navbar {
+        height: 80px;
 
-		.navbar-nav {
-			li.nav-item {
-				&.active {
-					a.nav-link {
-						color: $red;
-					}
-				}
+        .navbar-nav {
+            li.nav-item {
+                &.active {
+                    a.nav-link {
+                        color: $red;
+                    }
+                }
 
-				a {
-					&.nav-link {
-						letter-spacing: 1px;
-						color: $gray-900;
-						padding-left: 1rem;
-						padding-right: 1rem;
+                a {
+                    &.nav-link {
+                        letter-spacing: 1px;
+                        color: $gray-900;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
 
-						&:hover {
-							text-decoration: none;
-						}
-					}
-				}
-			}
-		}
-	}
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 section {
-	margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .card {
-	&.bordered {
-		border: 1px solid $gray-200;
-	}
-	border-radius: 15px;
+    &.bordered {
+        border: 1px solid $gray-200;
+    }
 
-	.tag {
-		z-index: 3;
-		font-size: 0.875rem;
-		background-color: $pink;
-		padding: 0.25rem 1.25rem;
-		position: absolute;
-		top: 0;
-		right: 0;
-		color: $white;
-		min-height: 30px;
-		border-radius: 0px 15px;
+    border-radius: 15px;
 
-		span {
-			font-weight: 300;
-		}
-	}
+    .tag {
+        z-index: 3;
+        font-size: 0.875rem;
+        background-color: $pink;
+        padding: 0.25rem 1.25rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $white;
+        min-height: 30px;
+        border-radius: 0px 15px;
 
-	.img-wrapper {
-		height: 100%;
-		margin-bottom: 0;
-		border-radius: 0.9375rem;
-		overflow: hidden;
-	}
+        span {
+            font-weight: 300;
+        }
+    }
 
-	.meta-wrapper {
-		margin-top: 1rem;
+    .img-wrapper {
+        height: 100%;
+        margin-bottom: 0;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+    }
 
-		h5 {
-			font-size: 1.125rem;
-			margin-bottom: 2px;
-		}
+    .meta-wrapper {
+        margin-top: 1rem;
 
-		span {
-			font-size: 0.875rem;
-		}
-	}
+        h5 {
+            font-size: 1.125rem;
+            margin-bottom: 2px;
+        }
 
-	&.card-featured {
-		overflow: hidden;
-		cursor: pointer;
-		height: 100%;
+        span {
+            font-size: 0.875rem;
+        }
+    }
 
-		&::after {
-			position: absolute;
-			content: " ";
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			transform: scale(1.1);
-			transition: 0.5s transform ease-in-out;
-			z-index: 2;
-			@include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
-		}
+    &.card-featured {
+        overflow: hidden;
+        cursor: pointer;
+        height: 100%;
 
-		.img-wrapper {
-			z-index: 1;
-			margin: 0;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			transform: scale(1.1);
-			transition: 0.25s ease-in-out;
-		}
+        &::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transform: scale(1.1);
+            transition: 0.5s transform ease-in-out;
+            z-index: 2;
+            @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+        }
 
-		.meta-wrapper {
-			z-index: 4;
-			color: $white;
-			padding: 20px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			width: 100%;
-			transform: translateY(0);
-			transition: 0.3s transform ease-in-out;
-			display: flex;
-			justify-content: flex-end;
-			flex-direction: column;
-		}
+        .img-wrapper {
+            z-index: 1;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale(1.1);
+            transition: 0.25s ease-in-out;
+        }
 
-		&:hover {
-			.meta-wrapper {
-				transform: translateY(-10px);
-			}
+        .meta-wrapper {
+            z-index: 4;
+            color: $white;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(0);
+            transition: 0.3s transform ease-in-out;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
 
-			&:after {
-				transform: scale(1);
-			}
+        &:hover {
+            .meta-wrapper {
+                transform: translateY(-10px);
+            }
 
-			.img-wrapper {
-				transform: scale(1);
-			}
-		}
-	}
+            &:after {
+                transform: scale(1);
+            }
+
+            .img-wrapper {
+                transform: scale(1);
+            }
+        }
+    }
 }
 
 .img-cover {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .img-contain {
-	object-fit: contain;
-	height: 100%;
-	width: 100%;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 .testimonial-hero,
 .testimonial-hero img {
-	width: 365px;
-	height: 500px;
+    width: 365px;
+    height: 500px;
 }
 
 .button-story {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 footer {
-	padding-top: 50px;
+    padding-top: 50px;
 
-	.brand-tagline {
-		color: #b0b0b0;
-		margin-top: 6px;
-	}
+    .brand-tagline {
+        color: #b0b0b0;
+        margin-top: 6px;
+    }
 
-	.list-group-item {
-		padding: 0.3125rem 0;
-		border: 0;
+    .list-group-item {
+        padding: 0.3125rem 0;
+        border: 0;
 
-		a,
-		span {
-			color: $gray-500;
-			font-weight: 300;
-		}
+        a,
+        span {
+            color: $gray-500;
+            font-weight: 300;
+        }
 
-		a {
-			@include hover-focus {
-				color: $gray-900;
-				text-decoration: none;
-			}
-		}
-	}
+        a {
+            @include hover-focus {
+                color: $gray-900;
+                text-decoration: none;
+            }
+        }
+    }
 
-	.copyrights {
-		margin-top: 50px;
-		font-weight: 300;
-		color: $gray-500;
-	}
+    .copyrights {
+        margin-top: 50px;
+        font-weight: 300;
+        color: $gray-500;
+    }
 }
+
 main {
-	p {
-		color: $gray-500;
-		font-weight: 300;
-	}
+    p {
+        color: $gray-500;
+        font-weight: 300;
+    }
+}
+
+.brand-text {
+    font-size: 35px;
+    font-weight: 500;
+    color: $black;
+}
+
+.hero-bukawarung {
+    background-image: url('../images/ImageBanner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 500px;
 }
