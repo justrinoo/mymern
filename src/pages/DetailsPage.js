@@ -11,13 +11,13 @@ import Footer from "parts/Footer";
 
 export default class DetailsPage extends Component {
 	componentDidMount() {
-		window.title = "Staycation | Details Page";
+		window.title = "Home | Details Page";
 		window.scrollTo(0, 0);
 	}
 	render() {
 		const breadcrumblist = [
 			{ pageTitle: "Home", pageHref: "" },
-			{ pageTitle: "House Details", pageHref: "" },
+			{ pageTitle: "Checkout Barang", pageHref: "" },
 		];
 		return (
 			<>

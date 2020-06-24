@@ -1,6 +1,5 @@
 import React from "react";
-import ImageHero from "assets/images/img-hero.jpg";
-import ImgHeroFrame from "assets/images/img-hero-frame.jpg";
+import ImageHero from "assets/images/image-landingpage.jpg";
 import IconTraveller from "assets/images/icons/ic_traveler.svg";
 import IconCities from "assets/images/icons/ic_cities.svg";
 import IconTreasure from "assets/images/icons/ic_treasure.svg";
@@ -9,97 +8,48 @@ import FormatNumber from "utils/FormatNumber";
 import Fade from "react-reveal/Fade";
 
 export default function Hero(props) {
-  const showMostPicked = () => {
-    window.scrollTo({
-      top: props.refMostPicked.current.offsetTop - 30,
-      behavior: "smooth",
-    });
-  };
+	const showMostPicked = () => {
+		window.scrollTo({
+			top: props.refMostPicked.current.offsetTop - 30,
+			behavior: "smooth",
+		});
+	};
 
-  return (
-    <Fade bottom>
-      <section className="container pt-4">
-        <div className="row align-items-center">
-          <div className="col-auto pr-5" style={{ width: 520 }}>
-            <h1 className="font-weight-bold line-height-1 mb-3">
-              Forget Busy Work, <br />
-              Start Next Vacation
-            </h1>
-            <p className="mb-4 font-weight-light text-gray-500 w-75">
-              We provied what you need to enjoy your holiday with family.Time to
-              make another memorable moments
-            </p>
-            <Button
-              className="btn px-5"
-              hasShadow
-              isOutline
-              onClick={showMostPicked}
-            >
-              Show Me Now
-            </Button>
-            <div className="row" style={{ marginTop: 80 }}>
-              <div className="col-auto" style={{ marginRight: 35 }}>
-                <img
-                  src={IconTraveller}
-                  width={36}
-                  height={36}
-                  alt={`${props.data.travelers} Travellers`}
-                />
-                <h6 className="mt-3">
-                  {FormatNumber(props.data.travelers)}{" "}
-                  <span className="text-gray-500 font-weight-light">
-                    Travellers
-                  </span>
-                </h6>
-              </div>
-              <div className="col-auto" style={{ marginRight: 35 }}>
-                <img
-                  src={IconTreasure}
-                  width={36}
-                  height={36}
-                  alt={`${props.data.treasures} Treasures`}
-                />
-                <h6 className="mt-3">
-                  {FormatNumber(props.data.treasures)}{" "}
-                  <span className="text-gray-500 font-weight-light">
-                    Treasures
-                  </span>
-                </h6>
-              </div>
-              <div className="col-auto">
-                <img
-                  src={IconCities}
-                  width={36}
-                  height={36}
-                  alt={`${props.data.cities} Cities`}
-                />
-                <h6 className="mt-3">
-                  {FormatNumber(props.data.cities)}{" "}
-                  <span className="text-gray-500 font-weight-light">
-                    Cities
-                  </span>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 pl-5">
-            <div style={{ width: 520, height: 410 }}>
-              <img
-                src={ImageHero}
-                alt="HotelBeach Royale"
-                className="img-fluid position-absolute"
-                style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
-              />
-              <img
-                src={ImgHeroFrame}
-                alt="HotelBeach Royale"
-                className="img-fluid position-absolute"
-                style={{ margin: "0 -15px -15px 0" }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </Fade>
-  );
+	return (
+		<Fade bottom>
+			<section className="container pt-4">
+				<div className="row align-items-center">
+					<div className="col-auto pr-5" style={{ width: 520 }}>
+						<h2 className="font-weight-bold line-height-1 mb-3">
+							Transaksi santai dengan digital <br />
+							memudahkan anda dalam apapun
+						</h2>
+						<p className="mb-4 font-weight-light text-gray-500 w-75 text-justify">
+							suatu bentuk digitalisasi dari toko retail(GSPRO) konvensional ke
+							toko retail berbasis online yang ada di SMK Jakarta Pusat 1,
+							memudahkan transaksi pembelian dilingkungan SMK Jakarta Pusat 1
+							dan lebih luas lagi di wilayah DKI Jakarta.
+						</p>
+						<Button
+							className="btn px-5 btn-outline-danger"
+							hasShadow
+							onClick={showMostPicked}
+						>
+							Lihat Sekarang
+						</Button>
+					</div>
+					<div className="col-6 pl-5">
+						<div style={{ width: 520, height: 410 }}>
+							<img
+								src={ImageHero}
+								alt="HotelBeach Royale"
+								className="img-fluid position-absolute"
+								style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</Fade>
+	);
 }

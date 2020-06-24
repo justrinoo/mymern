@@ -49,7 +49,7 @@ export default class Checkout extends Component {
 		};
 		const steps = {
 			bookingInformation: {
-				title: "Booking Information",
+				title: "Booking Produk",
 				description: "Please fill up the blank fields below",
 				content: (
 					<BookingInformation
@@ -107,7 +107,7 @@ export default class Checkout extends Component {
 													className="btn mb-3"
 													type="button"
 													isBlock
-													isPrimary
+													isDanger
 													hasShadow
 													onClick={nextStep}
 												>
@@ -137,7 +137,7 @@ export default class Checkout extends Component {
 													className="btn mb-3"
 													type="button"
 													isBlock
-													isPrimary
+													isDanger
 													hasShadow
 													onClick={nextStep}
 												>
@@ -163,7 +163,7 @@ export default class Checkout extends Component {
 										className="btn"
 										type="link"
 										isBlock
-										isPrimary
+										isDanger
 										hasShadow
 										href=""
 									>

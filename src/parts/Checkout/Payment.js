@@ -3,7 +3,6 @@ import InputFile from "elements/Form/InputFile";
 import InputText from "elements/Form/InputText";
 import Fade from "react-reveal/Fade";
 import logoBca from "assets/images/logo-bca.jpg";
-import logoMandiri from "assets/images/logo-mandiri.jpg";
 
 export default function Payment(props) {
 	const { data, ItemDetails, checkout } = props;
@@ -20,8 +19,8 @@ export default function Payment(props) {
 						<Fade delay={300}>
 							<p className="mb-4">Transfer Pembayaran: </p>
 							<p>Tax: {tax}%</p>
-							<p>Sub Total: ${subTotal} USD</p>
-							<p>Total: ${grandTotal} USD</p>
+							<p>Sub Total: Rp.{subTotal} </p>
+							<p>Total: Rp. {grandTotal} </p>
 							<div className="row mt-4">
 								<div className="col-3 text-right">
 									<img src={logoBca} alt="Bank Central Asia" width={60} />
@@ -29,16 +28,6 @@ export default function Payment(props) {
 								<div className="col">
 									<dl>
 										<dd>Bank Central Asia</dd>
-										<dd>2208 8897 3884</dd>
-										<dd>Rino Satya Putra</dd>
-									</dl>
-								</div>
-							</div>
-							<div className="row">
-								<div className="col-3 text-right">
-									<img src={logoMandiri} alt="Mandiri" width={60} />
-									<dl>
-										<dd>Mandiri</dd>
 										<dd>2208 8897 3884</dd>
 										<dd>Rino Satya Putra</dd>
 									</dl>

@@ -1,185 +1,139 @@
 {
-  "hero": {
-    "travelers": 80409,
-    "treasures": 882,
-    "cities": 1492
-  },
-  "mostPicked": [
-    {
-      "_id": "asd1293uasdads1",
-      "name": "Jung Hook Sie",
-      "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-1.jpg",
-      "country": "South Korea",
-      "city": "Seoul Flore",
-      "price": "80",
-      "unit": "night"
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "The People House",
-      "type": "Hotel",
-      "imageUrl": "/images/image-mostpicked-2.jpg",
-      "country": "Indonesia",
-      "city": "Bogor",
-      "price": "52",
-      "unit": "night"
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "House Tour",
-      "type": "Rumah",
-      "imageUrl": "/images/image-mostpicked-3.jpg",
-      "country": "South Korea",
-      "city": "Seoul Flore",
-      "price": "80",
-      "unit": "night"
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "Jung Hook Sie",
-      "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-4.jpg",
-      "country": "South Korea",
-      "city": "Seoul Flore",
-      "price": "80",
-      "unit": "night"
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "Jung Hook Sie",
-      "type": "Apartment",
-      "imageUrl": "/images/image-mostpicked-5.jpg",
-      "country": "South Korea",
-      "city": "Seoul Flore",
-      "price": "80",
-      "unit": "night"
-    }
-  ],
-  "categories": [
-    {
-      "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
-      "items": [
-        {
-          "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
-          "imageUrl": "/images/image-category-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": true
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/image-category-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/image-category-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
-          "imageUrl": "/images/image-category-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        }
-      ]
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "Hotels with large living room",
-      "items": [
-        {
-          "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
-          "imageUrl": "/images/image-category-5.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/image-category-6.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/image-category-7.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
-          "imageUrl": "/images/image-category-8.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": true
-        }
-      ]
-    },
-    {
-      "_id": "asd1293uasdads1",
-      "name": "Apartments with kitchen set",
-      "items": [
-        {
-          "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
-          "imageUrl": "/images/image-category-9.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/image-category-10.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/image-category-11.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": true
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
-          "imageUrl": "/images/image-category-12.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        }
-      ]
-    }
-  ],
-  "testimonial": {
-    "_id": "asd1293uasdads1",
-    "imageUrl": "/images/testimonial-landingpages.jpg",
-    "imageFrame": "/images/testimonial-frame.jpg",
-    "name": "Happy Family",
-    "rate": 3.75,
-    "content": "What a great trip with my family and I should try again next time soon ...",
-    "familyName": "Rino",
-    "familyOccupation": "Software Developer"
-  }
+	"hero": {
+		"travelers": 80409,
+		"treasures": 882,
+		"cities": 1492
+	},
+	"mostPicked": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sponge",
+			"type": "Apartment",
+			"imageUrl": "/images/Sponge.jpg",
+			"country": "6000",
+			"price": "6000",
+			"unit": "barang"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Aqua 600Ml",
+			"type": "Hotel",
+			"imageUrl": "/images/aqua-600ml.jpg",
+			"country": "3000",
+			"price": "3000",
+			"unit": "barang"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Susu Ultra",
+			"type": "Rumah",
+			"imageUrl": "/images/susu-ultra.jpg",
+			"country": "3000",
+			"price": "3000",
+			"unit": "barang"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Teh Kotak",
+			"type": "Apartment",
+			"imageUrl": "/images/teh-kotak.jpg",
+			"country": "2500",
+			"price": "2500",
+			"unit": "barang"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Teh Gelas",
+			"type": "Apartment",
+			"imageUrl": "/images/image-details.png",
+			"country": "1000",
+			"price": "1000",
+			"unit": "barang"
+		}
+	],
+	"categories": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Jajanan",
+			"items": [
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Cap Panda",
+					"imageUrl": "/images/cap-panda.jpg",
+					"country": "5500",
+					"isPopular": true
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Choco Cips",
+					"imageUrl": "/images/choco-cips.jpg",
+					"country": "3500",
+
+					"isPopular": false
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Floridina",
+					"imageUrl": "/images/floridina.jpg",
+					"country": "5000",
+					"isPopular": false
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Good Day Botol",
+					"imageUrl": "/images/good-day.jpg",
+					"country": "5500",
+					"isPopular": false
+				}
+			]
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Jajanan Guru",
+			"items": [
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Cap badak",
+					"imageUrl": "/images/larutan-cap-badak.jpg",
+					"country": "8000",
+
+					"isPopular": false
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Mizone 500Ml",
+					"imageUrl": "/images/mizone-500ml.jpg",
+					"country": "Harga",
+
+					"isPopular": false
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Pocari",
+					"imageUrl": "/images/pocari- sweat-500ml.jpg",
+					"country": "7000",
+
+					"isPopular": false
+				},
+				{
+					"_id": "asd1293uasdads1",
+					"name": "Sari kacang ijo",
+					"imageUrl": "/images/sari-kacang-ijo.jpg",
+					"country": "4000",
+
+					"isPopular": true
+				}
+			]
+		}
+	],
+	"testimonial": {
+		"_id": "asd1293uasdads1",
+		"imageUrl": "/images/testi-gspro.jpg",
+		"imageFrame": "/images/testimonial-frame.jpg",
+		"name": "Testimonial Gesjan",
+		"rate": 3.75,
+		"content": "Pelayanannya baik, dan fitur online sangat membantu saat bertransaksi",
+		"familyName": "Rizky Akbar",
+		"familyOccupation": "Guru Rekayasa Perangkat Lunak"
+	}
 }

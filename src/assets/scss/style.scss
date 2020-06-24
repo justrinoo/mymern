@@ -50,11 +50,11 @@
 	font-size: 26px;
 	font-weight: 500;
 	font-family: "Poppins", sans-serif;
-	color: $primary;
+	color: $red;
 
 	&:hover {
 		text-decoration: none;
-		color: $primary;
+		color: $red;
 	}
 }
 
@@ -70,7 +70,7 @@ header {
 			li.nav-item {
 				&.active {
 					a.nav-link {
-						color: $primary;
+						color: $red;
 					}
 				}
 

@@ -67,55 +67,55 @@ export default class BookingForm extends Component {
 
 		return (
 			<div className="card bordered" style={{ padding: "60px 80px" }}>
-				<h4 className="mb-3">Start Booking</h4>
-				<h5 className="h2 text-teal mb-4">
-					${itemDetails.price}{" "}
+				<h4 className="mb-3">Mulai Belanja</h4>
+				<h5 className="h2 text-danger mb-4">
+					Rp. {itemDetails.price}{" "}
 					<span className="text-gray-500 font-weight-light">
 						per {itemDetails.unit}
 					</span>
 				</h5>
 
-				<label htmlFor="duration">How long you will stay?</label>
+				<label htmlFor="duration">Berapa barang yang ingin kamu pesan?</label>
 				<InputNumber
 					max={30}
-					suffix={" night"}
+					suffix={" product"}
 					isSuffixPlural
 					onChange={this.updateData}
 					name="duration"
 					value={data.duration}
 				/>
 
-				<label htmlFor="date">Pick a date</label>
+				<label htmlFor="date">Kapan kamu akan ambil barang?</label>
 				<InputDate
 					onChange={this.updateData}
 					name="date"
 					value={data.date}
 				></InputDate>
 
-				<h6
+				<span
 					className="text-gray-500 font-weight-light"
 					style={{ marginBottom: 40 }}
 				>
-					You will pay{" "}
+					Kamu akan membayar sebesar{" "}
 					<span className="text-gray-900">
-						${itemDetails.price * data.duration} USD
+						Rp. {itemDetails.price * data.duration}
 					</span>{" "}
 					per{" "}
 					<span className="text-gray-900">
 						{data.duration} {itemDetails.unit}
 					</span>
-				</h6>
+				</span>
 
 				<Button
 					className="btn"
 					hasShadow
-					isPrimary
+					isDanger
 					isBlock
 					type="link"
 					href="/checkout"
 					onClick={this.startBooking}
 				>
-					Continue to Booking
+					Lanjut Pembayaran
 				</Button>
 			</div>
 		);
