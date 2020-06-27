@@ -20,7 +20,7 @@ export default class Checkout extends Component {
 	state = {
 		data: {
 			firstName: "",
-			lastName: "",
+			alamat: "",
 			email: "",
 			phone: "",
 			proofPayment: "",
@@ -49,7 +49,7 @@ export default class Checkout extends Component {
 		};
 		const steps = {
 			bookingInformation: {
-				title: "Booking Produk",
+				title: "Booking Form",
 				description: "Please fill up the blank fields below",
 				content: (
 					<BookingInformation
@@ -99,9 +99,9 @@ export default class Checkout extends Component {
 							{CurrentStep === "bookingInformation" && (
 								<Controller>
 									{data.firstName !== "" &&
-										data.lastName !== "" &&
 										data.email !== "" &&
-										data.phone !== "" && (
+										data.phone !== "" &&
+										data.alamat !== "" && (
 											<Fade>
 												<Button
 													className="btn mb-3"
@@ -111,7 +111,7 @@ export default class Checkout extends Component {
 													hasShadow
 													onClick={nextStep}
 												>
-													Lanjutkan PembayaranFnama
+													Lanjutkan Pembayaran
 												</Button>
 											</Fade>
 										)}

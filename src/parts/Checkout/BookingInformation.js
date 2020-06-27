@@ -42,7 +42,7 @@ export default function BookingInformation(props) {
 					</div>
 					<div className="col-5 py-5" style={{ paddingLeft: 80 }}>
 						<Fade delay={600}>
-							<label htmlFor="firstName">First Name</label>
+							<label htmlFor="firstName">Nama Lengkap </label>
 							<InputText
 								id="firstName"
 								name="firstName"
@@ -50,13 +50,13 @@ export default function BookingInformation(props) {
 								onChange={props.onChange}
 							/>
 
-							<label htmlFor="lastName">Last Name</label>
+							{/* <label htmlFor="lastName">Last Name</label>
 							<InputText
 								id="lastName"
 								name="lastName"
 								value={data.lastName}
 								onChange={props.onChange}
-							/>
+							/> */}
 
 							<label htmlFor="email">Email</label>
 							<InputText
@@ -66,13 +66,21 @@ export default function BookingInformation(props) {
 								value={data.email}
 								onChange={props.onChange}
 							/>
-
-							<label htmlFor="phone">Phone Number</label>
+							<label htmlFor="phone">No Handphone</label>
 							<InputText
 								id="phone"
 								name="phone"
 								type="tel"
 								value={data.phone}
+								onChange={props.onChange}
+							/>
+
+							<label htmlFor="alamat">Alamat</label>
+							<InputText
+								id="alamat"
+								name="alamat"
+								type="text"
+								value={data.alamat}
 								onChange={props.onChange}
 							/>
 						</Fade>

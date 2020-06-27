@@ -51,8 +51,8 @@ export default function Header(props) {
 										Buka Warung
 									</Button>
 								</li>
-								<li className={`nav-item ${getNavLinkClass("/contact")}`}>
-									<Button type="link" className="nav-link" href="/contact">
+								<li className={`nav-item ${getNavLinkClass("/login")}`}>
+									<Button type="link" className="nav-link" href="/login">
 										Login
 									</Button>
 								</li>

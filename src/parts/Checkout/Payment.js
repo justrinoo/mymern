@@ -2,14 +2,13 @@ import React from "react";
 import InputFile from "elements/Form/InputFile";
 import InputText from "elements/Form/InputText";
 import Fade from "react-reveal/Fade";
-import logoBca from "assets/images/logo-bca.jpg";
-
+import LogoBca from "assets/images/logo-bca.jpg";
 export default function Payment(props) {
 	const { data, ItemDetails, checkout } = props;
 
 	const tax = 10;
 	const subTotal = ItemDetails.price * checkout.duration;
-	const grandTotal = (subTotal * tax) / 100 + subTotal;
+	const grandTotal = ((subTotal * tax) / 2000) * subTotal;
 
 	return (
 		<Fade>
@@ -23,7 +22,7 @@ export default function Payment(props) {
 							<p>Total: Rp. {grandTotal} </p>
 							<div className="row mt-4">
 								<div className="col-3 text-right">
-									<img src={logoBca} alt="Bank Central Asia" width={60} />
+									<img src={LogoBca} alt="Bank Central Asia" width={60} />
 								</div>
 								<div className="col">
 									<dl>
@@ -51,7 +50,7 @@ export default function Payment(props) {
 								type="text"
 								id="bankName"
 								name="bankName"
-								value={data.bankName}
+								value={data.value}
 								onChange={props.onChange}
 							/>
 							<label htmlFor="bankHolder">Nama Pengirim</label>
